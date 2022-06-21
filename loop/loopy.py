@@ -57,13 +57,13 @@
 #        print("zahl ist über 10")
 #    hinzufügen = input("weiter addieren?: ja/nein ")
 
-
+##################
  #   if zahl >= 10:
  #       break
-
+##################
 ###########
 
-
+##################
 #zahl = int(input("zahl eingeben"))
 #if zahl < 10:
 #    print("die Zahl " + str(zahl) + " ist kleiner als 10")
@@ -80,10 +80,50 @@
 #        print("die Zahl " + str(zahl) + " ist größer als 10")
 #    print(zahl)
 #    hinzufügen=input("noch eins hinzuüggen: ja oder nein?:")
+##################
+#################
+#for hurra in range(1,2):
+#    for hip in range(1,3):
+#        print("HIP")
+#    print("HURRA!")
+##################
+##################
+#for sing in range(1,3):
+#    for hoch in range(1,3):
+#        print("hoch soll er leben")
+#    print("dreiii mal hoch!")
+##################
 
 
+#Funktion um die antwort zu prüfen 
+def prüf_antwort (frage, lösung):
+    global punktstand
+    versuchsreihe = True
+    versuche = 0
+    while versuchsreihe and versuche < 3:
+        if frage.lower() == lösung.lower():
+            print("YEAH - richtige Antwort! ")
+            punktstand = punktstand + 1
+            versuchsreihe = False
+        else:
+            if versuche < 2:
+                frage = input("OOHHH NEIN. Versuchen es noch einmal. ")
+            versuche = versuche + 1
+    if versuche ==3:
+        print("die richtige Antwort ist " + lösung)
+ #   else:
+ #       print("falsche Antwort")
 
+#Punktestand wird auf null gesetzt       
+punktstand = 0
+#Willkommensnachricht beim starten des Spiels
+print("Erraten Sie das Tier!")
+#fragen und funktion prüfzeile der eingabe
+frage1 = input("Welcher Bär lebt am Nordpol? ")
+prüf_antwort(frage1, "polarbär")
+frage2 = input("Welches Tier ist der König des Jungels? ")
+prüf_antwort(frage2, "löwe")
+frage3 = input("Welches Tier ist das größte Tier? ")
+prüf_antwort(frage3, "blauwaal")
 
-
-
-    
+print("dein Punktestand ist " + str(punktstand))
