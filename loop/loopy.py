@@ -61,22 +61,29 @@
  #   if zahl >= 10:
  #       break
 
-zahl = int(input("zahl eingeben"))
-if zahl < 10:
-    print("\nkleiner als 10")
-plus = zahl + 1
-hinzufügen=input("hinzuüggen: ja oder nein?:")
-while hinzufügen =="ja":
-    print("\n")
-    zahl = zahl + 1
-    if zahl < 10:
-        print("kleier als 10")
-    elif zahl == 10:
-        print("gleich 10")
-    else:
-        print("größer als 10")
-    print(zahl)
-    hinzufügen=input("hinzuüggen: ja oder nein?:")
+###########
+
+
+#zahl = int(input("zahl eingeben"))
+#if zahl < 10:
+#    print("die Zahl " + str(zahl) + " ist kleiner als 10")
+#plus = zahl + 1
+#hinzufügen=input("noch eins hinzuüggen: ja oder nein?:")
+#while hinzufügen =="ja":
+#    print("\n")
+#    zahl = zahl + 1
+#    if zahl < 10:
+#        print("die Zahl " + str(zahl) + " ist kleier als 10")
+#    elif zahl == 10:
+#        print("die Zahl " + str(zahl) + " ist gleich groß wie 10")
+#    else:
+#        print("die Zahl " + str(zahl) + " ist größer als 10")
+#    print(zahl)
+#    hinzufügen=input("noch eins hinzuüggen: ja oder nein?:")
+
+
+
+
 
 
     
