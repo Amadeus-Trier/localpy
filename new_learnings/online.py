@@ -1,4 +1,3 @@
-print("ich bin online")
-print("ich bin online")
-print("ich bin online")
-print("ich bin online")
+text = ("Hello World")
+for text in range(1,11):
+    print(text)

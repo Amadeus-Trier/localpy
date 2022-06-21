@@ -9,15 +9,13 @@
 
 
 #---var
-str_texte = [   "es geht los",                                          #das startetextlein                                      
+list_texte = [   "es geht los",                                          #das startetextlein                                      
             "1. erste lektion, lerne die einzelnen befehle",        #_1.0
             "2. führe die einzelnen befehle aus",                   #__1.1
             "3. lerne weitere Anwendungen"]                         #__1.2
 
 int_alter = int(4)
 
-#string palim="palim";
-print(texte)
 
 
 
@@ -27,12 +25,12 @@ texte = str("es geht los")
 
 
 #prog
-print(starttext)
+print(texte)
 
 
 
 
-for ausgabe in liste:
+for ausgabe in list_texte:
     print(ausgabe)
 
 
@@ -45,7 +43,7 @@ texte = [   "es geht los",                                          #das startet
 
 
 #string palim="palim";
-print(texte)
+print(list_texte)
 
 
 
@@ -55,10 +53,10 @@ texte = str("es geht los")
 
 
 #prog
-print(starttext)
+print(texte)
 
 
 
 
-for ausgabe in liste:
+for ausgabe in list_texte:
     print(ausgabe)
