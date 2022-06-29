@@ -1,5 +1,12 @@
-fin = open("//Users/amadeus/localpy/SpeiseHelpi/ein,- und ausgabe/speisekarte.txt", "rt")
-fout = open("/Users/amadeus/localpy/SpeiseHelpi/ein,- und ausgabe/text-export.txt", "wt",)
+#--------------------------------------------------------------------------------------------------#
+#---    Projekt:    Speisehelpy		                                                            ---#
+#---    Author:     Amadeus Werbung | Deine Fullservice Werbe- & Marketingagentur in Trier      ---#
+#---    Version:    0.4                                                                         ---#
+#---    Date:       2022-06-03                                                                  ---#
+#---    last mod:   2022-06-28                                                                  ---#
+#--------------------------------------------------------------------------------------------------#
+fin = open("/Users/amadeus/Creative Cloud Files/localpy/SpeiseHelpi/in-out/speisekarte.txt", "rt")
+fout = open("/Users/amadeus/Creative Cloud Files/localpy/SpeiseHelpi/in-out/speisekarte-export .txt", "wt",)
 for line in fin:
     fout.write(line.replace("Brot", "Brot a")
 	.replace("Brot", "Brot a")
@@ -33,4 +40,5 @@ for line in fin:
 	.replace("Rahmsoße", "Rahmsoße g"))
 fin.close()
 fout.close()
+
 
